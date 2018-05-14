@@ -40,7 +40,8 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'redis'
-
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
 
 
 

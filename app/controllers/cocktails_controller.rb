@@ -21,11 +21,9 @@ class CocktailsController < ApplicationController
       else
         render :new
       end
-        # Unless @restaurant.valid?, #save will return false,
-    # and @restaurant is not persisted.
-    # TODO: present the form again with error messages.
-
   end
+
+
 
   private
 
@@ -34,8 +32,11 @@ class CocktailsController < ApplicationController
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:title, :body, :photo)
+
   end
+
+
 
 end
 
